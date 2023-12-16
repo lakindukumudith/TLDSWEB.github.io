@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLDS Production</title>
+    <link rel="shortcut icon" href="Images/My Brother And Self Photo And Tharusha Photo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <style>
+        body {
+            padding: 0.rem;
+            background-position-x: 0%;
+            background-position-y: 0%;
+            min-height: 881px;
+            position: relative;
+            border-collapse: separate;
+            
+            
+        }
+        .rd {
+            text-align: center;
+            justify-content: center;
+            color: rgb(24, 165, 48);
+            font-size: 20px;
+            font-family: Segoe UI", "Segoe UI Midlevel", "Segoe WP;
+        }
+        .pr {
+            text-align: center;
+            color: rgb(161, 27, 27);
+
+        }
+        .prl {
+            border: red solid 1px;
+            padding: 5px;
+            border-radius: 100px;
+            box-sizing: border-box;
+            cursor: not-allowed;
+            background-color: rgb(0, 56, 119);
+
+        }
+        .tn {
+           user-select: none;
+           
+        }
+       
+    </style>
+
+
+    <div class="tnbg">
+        <img src="Images/tlds.gif" alt="TLDS" class="tn">
+    </div>
+
+   <nav>
+    <br>
+    <button type="button" id="re" onclick="restart()">Reset</button>
+    <button type="reset" id="re" onclick="tldsu()">TLDS Production</button> 
+    
+
+   </nav>
+
+ 
+    
+    <div class="son" id="son">
+        <input type="search" name="mainS" id="search" placeholder="Search" value="" translate="yes" title="please type and press search in google / bing button." required alt="search is not appear in your browser. please click the reset button." maxlength="500000" minlength="3" > <br> <input type="button" value="Search in google" id="sbtn" class="btn"> <br> <input type="button" value="Search in Bing" id="sbtn2" class="btn1">
+        
+    </div>
+    <div class="favouritIcons">
+        <i class="bi bi-youtube" id="youtube" onclick="youtube()"></i>
+        <i class="bi bi-facebook" title="Please avoid addiction" id="facebook" onclick="facebook()"></i>
+        <i class="bi bi-browser-chrome" id="chrome" onclick="google()"></i>
+        <i class="bi bi-browser-edge" id="edge" onclick="bing()"></i>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+   <div class="prl" title="Please Read"> <h1 class="pr">Please Read This</h1>
+    <p class="rd">You have a super brain. So you can undestand this in very easly. 
+    Many people ara adicated facebook and other E-platformers.
+     You must understand those E-platformers are created for your happy, fun.</p></div>
+    
+    <br>
+
+    <hr>
+    <br>
+    <h4>TLDS Production 2020 Cophyright </h4>
+   
+    <script>
+        
+let search = document.querySelector('#search');
+let sbtn = document.querySelector('#sbtn');
+let sbtn2 = document.querySelector('#sbtn2');
+
+
+    sbtn.onclick = function() {
+ let url = "https://www.google.com/search?q=" + search.value;  
+ window.open(url,'_self');
+}
+
+
+sbtn2.onclick = function() {
+    let url = "https://www.bing.com/search?q=" + search.value;
+    window.open(url,"_self");
+}
+
+
+
+
+search.addEventListener("click",bulb );
+
+function bulb() {
+
+
+    document.getElementById("sbtn").style.backgroundColor = "lightskyblue";
+   document.getElementById("sbtn2").style.backgroundColor = "lightskyblue";
+
+   setTimeout(() => {
+    document.getElementById("sbtn").style.backgroundColor = "white";
+   document.getElementById("sbtn2").style.backgroundColor = "white";
+   }, 10000);
+
+   
+}
+
+function tldsu() {
+   let tldsurl = "https://www.youtube.com/channel/UCvjYs1Y1Bn0HBeUemCfHu2w/view_as=subscriber?sub_confirmation=1";
+   window.open(tldsurl,"_blank");
+}
+
+function google() {
+   let google = "https://www.google.com/";
+   window.open(google,"_blank");
+}
+
+function bing() {
+   let bing = "https://www.bing.com/";
+   window.open(bing,"_blank");
+}
+
+function youtube() {
+   let youtube = "https://www.youtube.com/";
+   window.open(youtube,"_blank");
+}
+
+function facebook() {
+   let facebook = "https://www.facebook.com/";
+   window.open(facebook,"_blank");
+}
+
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
